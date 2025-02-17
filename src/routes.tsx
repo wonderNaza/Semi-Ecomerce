@@ -6,6 +6,8 @@ import CartPage from './Components/CartPage';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Layout from './Components/Layout';
+import Electronic from './Components/Electronic';
+import Location from './Components/Location';
 
 //route object pattern
 // const routes = createBrowserRouter([
@@ -72,6 +74,10 @@ const routes = createBrowserRouter(
       <Route path='/home' element={<Homepage />} />
       <Route path='/category' element={<Category />} />
       <Route path='/product-detail' element={<ProductDetailPage />} />
+
+      {/* Dynamice Route(params) */}
+      <Route path='/home/:location' element={<Location />} />
+      <Route path='/home/:username/:age' element={<Electronic />} />
     </Route>
   ])
 )
