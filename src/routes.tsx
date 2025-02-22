@@ -57,28 +57,28 @@ import Location from './Components/Location';
 
 //jsx pattern
 const routes = createBrowserRouter(
-  createRoutesFromElements([
-    <Route path="/" element={<Homepage />} />,
-    // <Route path="/product-detail" element={<ProductDetailPage />} />,
-    // <Route path='/category' element={<Category />} />,
-    <Route path='/catpage' element={<CartPage />} />,
-    
-    // Nested Route
-    <Route path='/auth'>
-      <Route path='login' element={<Login />} />
-      <Route path='signup' element={<Signup />} />
-    </Route>,
+	createRoutesFromElements([
+		// <Route path="/" element={<Homepage />} />,
+		// <Route path="/product-detail" element={<ProductDetailPage />} />,
+		// <Route path='/category' element={<Category />} />,
+		<Route path="/catpage" element={<CartPage />} />,
 
-    // Layout Route
-    <Route element={<Layout />}>
-      <Route path='/home' element={<Homepage />} />
-      <Route path='/category' element={<Category />} />
-      <Route path='/product-detail' element={<ProductDetailPage />} />
+		// Nested Route
+		<Route path="/auth">
+			<Route path="login" element={<Login />} />
+			<Route path="signup" element={<Signup />} />
+		</Route>,
 
-      {/* Dynamice Route(params) */}
-      <Route path='/home/:location' element={<Location />} />
-      <Route path='/home/:username/:age' element={<Electronic />} />
-    </Route>
-  ])
-)
+		// Layout Route
+		<Route element={<Layout />}>
+			<Route path="/" element={<Homepage />} />
+			<Route path="/category" element={<Category />} />
+			<Route path="/product-detail" element={<ProductDetailPage />} />
+
+			{/* Dynamice Route(params) */}
+			<Route path="/home/:location" element={<Location />} />
+			<Route path="/home/:username/:age" element={<Electronic />} />
+		</Route>,
+	])
+);
 export default routes;
