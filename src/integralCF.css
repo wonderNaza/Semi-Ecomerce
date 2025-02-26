@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "IntegralCF-Bold";
+  src: url("./fonts/IntegralCF-Bold.eot") format("embedded-opentype"),
+       url("./fonts/IntegralCF-Bold.woff") format("woff"),
+       url("./fonts//IntegralCF-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IntegralCF-Heavy";
+  src: url("./fonts/IntegralCF-BoldOblique.eot") format("embedded-opentype"),
+       url("./fonts/IntegralCF-BoldOblique.woff") format("woff"),
+       url("./fonts/IntegralCF-BoldOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IntegralCF-Medium";
+  src: url("./fonts/IntegralCF-DemiBold.eot") format("embedded-opentype"),
+       url("./fonts/IntegralCF-DemiBold.woff") format("woff"),
+       url("./fonts/IntegralCF-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IntegralCF-Regular";
+  src: url("./fonts/IntegralCF-Heavy.eot") format("embedded-opentype"),
+       url("./fonts/IntegralCF-Heavy.woff") format("woff"),
+       url("./fonts/IntegralCF-Heavy.woff2") format("woff2");
+}
+
+.integralcf-bold {
+  font-family: "IntegralCF-Bold";
+}
+.integralcf-heavy {
+  font-family: "IntegralCF-Heavy";
+}
+.integralcf-medium {
+  font-family: "IntegralCF-Medium";
+}
+.integralcf {
+  font-family: "IntegralCF-Regular";
+}
